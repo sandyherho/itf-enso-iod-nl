@@ -158,7 +158,7 @@ If you use this code or data in your research, please cite:
 @article{herho2025itf,
   title={Topological and Information-Theoretic Analysis of Climate-Driven Indonesian Throughflow Dynamics},
   author={Herho, Sandy H. S. and Herho, Katarina E. P. and Anwar, Iwan P. and Suwarman, Rusmawan},
-  journal={Complex Systems},
+  journal={xxxx},
   year={2025},
   volume={XX},
   pages={XXX--XXX},
