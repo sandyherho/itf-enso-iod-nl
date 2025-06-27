@@ -3,7 +3,7 @@
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Data](https://img.shields.io/badge/Data-1984--2017-green)](./raw_data/)
-[![Complex Systems](https://img.shields.io/badge/Journal-Complex%20Systems-red)](https://www.complex-systems.com/)
+[![Research](https://img.shields.io/badge/Research-Complex%20Systems-red)](https://en.wikipedia.org/wiki/Complex_system)
 [![Climate](https://img.shields.io/badge/Climate-Ocean%20Dynamics-lightblue)](https://www.nature.com/subjects/ocean-sciences)
 
 ## Research Overview
@@ -155,11 +155,11 @@ All datasets used in this study are provided in the `raw_data/` directory:
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@article{herho2025itf,
+@article{herho202xitf,
   title={Topological and Information-Theoretic Analysis of Climate-Driven Indonesian Throughflow Dynamics},
   author={Herho, Sandy H. S. and Herho, Katarina E. P. and Anwar, Iwan P. and Suwarman, Rusmawan},
   journal={xxxx},
-  year={2025},
+  year={202X},
   volume={XX},
   pages={XXX--XXX},
   doi={10.XXXX/XXXXXX}
