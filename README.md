@@ -1,5 +1,5 @@
 # Supplementary Materials for "Topological and Information-Theoretic Analysis of Climate-Driven Indonesian Throughflow Dynamics"
-
+[![DOI](https://zenodo.org/badge/1009813500.svg)](https://doi.org/10.5281/zenodo.15757950)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Data](https://img.shields.io/badge/Data-1984--2017-green)](./raw_data/)
