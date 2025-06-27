@@ -1,0 +1,102 @@
+MULTI-ENTROPY ANALYSIS OF CLIMATE-ITF COUPLING
+============================================================
+
+Analysis Date: 2025-06-27 07:24:53
+Data Period: 1984-01-01 to 2017-12-01
+Total Months: 408
+
+
+ENSEMBLE SCORING
+============================================================
+
+
+KEY FINDINGS
+============================================================
+
+RANKING OF CLIMATE-ITF COUPLING STRENGTH:
+
+1. MEI→ITF-S
+   Ensemble Score: 0.531 (Strong Coupling)
+   Optimal lag: 9 months
+   Causality ratio: 0.534
+
+2. MEI→ITF-G
+   Ensemble Score: 0.524 (Strong Coupling)
+   Optimal lag: 4 months
+   Causality ratio: 0.528
+
+3. MEI→ITF-T
+   Ensemble Score: 0.516 (Strong Coupling)
+   Optimal lag: 7 months
+   Causality ratio: 0.534
+
+4. DMI→ITF-T
+   Ensemble Score: 0.515 (Strong Coupling)
+   Optimal lag: 7 months
+   Causality ratio: 0.547
+
+5. DMI→ITF-G
+   Ensemble Score: 0.504 (Strong Coupling)
+   Optimal lag: 9 months
+   Causality ratio: 0.571
+
+6. DMI→ITF-S
+   Ensemble Score: 0.481 (Moderate Coupling)
+   Optimal lag: 4 months
+   Causality ratio: 0.538
+
+
+MEI INFLUENCE ON ITF COMPONENTS:
+----------------------------------------
+
+ITF-S:
+  • Information shared: 0.559 bits
+  • Information flow: 0.657 bits/time
+  • Directional influence: 53.4% from MEI
+  • ENSO has strong impact on ITF salinity transport
+
+ITF-G:
+  • Information shared: 0.567 bits
+  • Information flow: 0.736 bits/time
+  • Directional influence: 52.8% from MEI
+  • ENSO strongly controls total ITF transport
+
+ITF-T:
+  • Information shared: 0.547 bits
+  • Information flow: 0.715 bits/time
+  • Directional influence: 53.4% from MEI
+  • ENSO significantly affects ITF temperature transport
+
+
+DMI INFLUENCE ON ITF COMPONENTS:
+----------------------------------------
+
+ITF-T:
+  • Information shared: 0.421 bits
+  • Information flow: 0.525 bits/time
+  • Directional influence: 54.7% from DMI
+  • IOD clearly influences ITF heat transport
+
+ITF-G:
+  • Information shared: 0.427 bits
+  • Information flow: 0.616 bits/time
+  • Directional influence: 57.1% from DMI
+  • IOD substantially modulates total ITF flow
+
+ITF-S:
+  • Information shared: 0.426 bits
+  • Information flow: 0.473 bits/time
+  • Directional influence: 53.8% from DMI
+  • IOD weakly affects ITF freshwater flux
+
+
+SUMMARY OF INFORMATION FLOW:
+============================================================
+
+• ENSO most strongly affects: ITF-S
+• IOD most strongly affects: ITF-T
+
+• Average ENSO influence: 0.524 (Strong Coupling)
+• Average IOD influence: 0.500 (Strong Coupling)
+
+• ENSO is the dominant climate driver (5% stronger)

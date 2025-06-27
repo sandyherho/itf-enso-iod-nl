@@ -1,0 +1,38 @@
+ANNUAL CYCLE SUMMARY STATISTICS
+============================================================
+
+ITF-G:
+  Annual Mean: 5.993
+  Annual Std: 4.252
+  Min: -0.260 (Apr)
+  Max: 13.017 (Sep)
+  Range: 13.277
+
+ITF-T:
+  Annual Mean: 5.507
+  Annual Std: 4.391
+  Min: -2.392 (Apr)
+  Max: 11.723 (Jul)
+  Range: 14.114
+
+ITF-S:
+  Annual Mean: 1.665
+  Annual Std: 1.651
+  Min: -1.497 (Feb)
+  Max: 4.028 (Sep)
+  Range: 5.525
+
+MEI:
+  Annual Mean: -0.053
+  Annual Std: 0.008
+  Min: -0.069 (Mar)
+  Max: -0.035 (Jan)
+  Range: 0.034
+
+DMI:
+  Annual Mean: -0.073
+  Annual Std: 0.025
+  Min: -0.118 (Jun)
+  Max: -0.037 (Jan)
+  Range: 0.080
+

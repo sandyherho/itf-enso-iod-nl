@@ -1,0 +1,299 @@
+================================================================================
+EXTREMA EVALUATION REPORT FOR CLIMATE TIME SERIES
+Author: Sandy Herho <sandy.herho@email.ucr.edu>
+Date: June 2025
+================================================================================
+
+
+ITF ANALYSIS
+----------------------------------------
+Total observations: 408
+Mean: 4.3897
+Standard deviation: 3.5638
+Skewness: 0.1376
+Kurtosis: -0.4521
+
+Statistical Threshold Method:
+  Lower threshold (5%): -1.3016
+  Upper threshold (95%): 10.3215
+  Lower extrema count: 21
+  Upper extrema count: 21
+
+Block Maxima Analysis:
+  Number of blocks: 13
+  GEV shape parameter (maxima): 0.1715
+  GEV location parameter (maxima): 10.2387
+  GEV scale parameter (maxima): 1.4790
+
+Peak-Over-Threshold Analysis:
+  High threshold: 9.0243
+  Low threshold: -0.2267
+  High exceedances: 41
+  Low exceedances: 41
+
+Z-score Method:
+  Extrema detected: 19
+  Max Z-score: 2.5684
+
+Modified Z-score (MAD) Method:
+  High extrema: 0
+  Low extrema: 0
+
+Isolation Forest:
+  Anomalies detected: 41
+
+Local Outlier Factor:
+  Outliers detected: 41
+
+Composite Score Analysis:
+  High extrema (score > 0.179): 36
+  Low extrema (score > 0.224): 41
+  Max composite score (high): 0.7761
+  Max composite score (low): 0.6269
+
+ITF EXTREMA OCCURRENCE DATES
+----------------------------------------
+
+HIGH EXTREMA EVENTS:
+  1984-09-01 (time=1984.67): value=10.9863, score=0.507
+  1987-04-01 (time=1987.25): value=-3.1356, score=0.507
+  1987-05-01 (time=1987.33): value=-2.5463, score=0.358
+  1989-06-01 (time=1989.41): value=10.5122, score=0.448
+  1989-07-01 (time=1989.50): value=10.3642, score=0.328
+  1990-04-01 (time=1990.25): value=-2.9554, score=0.507
+  1990-05-01 (time=1990.33): value=-2.4953, score=0.358
+  1991-11-01 (time=1991.83): value=-2.7395, score=0.507
+  1992-04-01 (time=1992.25): value=-3.0541, score=0.507
+  1996-05-01 (time=1996.33): value=-1.2673, score=0.358
+  1998-04-01 (time=1998.25): value=-3.0345, score=0.507
+  1998-05-01 (time=1998.33): value=-3.4505, score=0.507
+  1999-07-01 (time=1999.50): value=10.5613, score=0.507
+  1999-09-01 (time=1999.67): value=10.3798, score=0.328
+  2000-06-01 (time=2000.42): value=12.5778, score=0.657
+  2000-07-01 (time=2000.50): value=13.1837, score=0.657
+  2000-08-01 (time=2000.58): value=12.4852, score=0.657
+  2000-09-01 (time=2000.67): value=13.5319, score=0.776
+  2001-07-01 (time=2001.50): value=11.9609, score=0.657
+  2001-08-01 (time=2001.58): value=11.0954, score=0.507
+  ... and 16 more events
+
+LOW EXTREMA EVENTS:
+  1984-09-01 (time=1984.67): value=10.9863, score=0.358
+  1987-04-01 (time=1987.25): value=-3.1356, score=0.627
+  1987-05-01 (time=1987.33): value=-2.5463, score=0.507
+  1990-04-01 (time=1990.25): value=-2.9554, score=0.627
+  1990-05-01 (time=1990.33): value=-2.4953, score=0.507
+  1991-11-01 (time=1991.83): value=-2.7395, score=0.507
+  1991-12-01 (time=1991.92): value=-2.1537, score=0.328
+  1992-04-01 (time=1992.25): value=-3.0541, score=0.627
+  1992-05-01 (time=1992.33): value=-2.3792, score=0.328
+  1995-04-01 (time=1995.25): value=-2.3077, score=0.448
+  1996-04-01 (time=1996.25): value=-1.6241, score=0.328
+  1996-05-01 (time=1996.33): value=-1.2673, score=0.358
+  1998-04-01 (time=1998.25): value=-3.0345, score=0.507
+  1998-05-01 (time=1998.33): value=-3.4505, score=0.627
+  1999-07-01 (time=1999.50): value=10.5613, score=0.358
+  2000-06-01 (time=2000.42): value=12.5778, score=0.358
+  2000-07-01 (time=2000.50): value=13.1837, score=0.358
+  2000-08-01 (time=2000.58): value=12.4852, score=0.358
+  2000-09-01 (time=2000.67): value=13.5319, score=0.358
+  2001-07-01 (time=2001.50): value=11.9609, score=0.358
+  ... and 21 more events
+
+ENSO ANALYSIS
+----------------------------------------
+Total observations: 408
+Mean: -0.0533
+Standard deviation: 0.9678
+Skewness: 0.4378
+Kurtosis: -0.0251
+
+Statistical Threshold Method:
+  Lower threshold (5%): -1.3895
+  Upper threshold (95%): 1.9195
+  Lower extrema count: 21
+  Upper extrema count: 21
+
+Block Maxima Analysis:
+  Number of blocks: 13
+  GEV shape parameter (maxima): 0.3619
+  GEV location parameter (maxima): 0.9681
+  GEV scale parameter (maxima): 0.8194
+
+Peak-Over-Threshold Analysis:
+  High threshold: 1.2660
+  Low threshold: -1.1800
+  High exceedances: 41
+  Low exceedances: 40
+
+Z-score Method:
+  Extrema detected: 27
+  Max Z-score: 2.7551
+
+Modified Z-score (MAD) Method:
+  High extrema: 0
+  Low extrema: 0
+
+Isolation Forest:
+  Anomalies detected: 41
+
+Local Outlier Factor:
+  Outliers detected: 41
+
+Composite Score Analysis:
+  High extrema (score > 0.179): 39
+  Low extrema (score > 0.179): 23
+  Max composite score (high): 0.7761
+  Max composite score (low): 0.6269
+
+ENSO EXTREMA OCCURRENCE DATES
+----------------------------------------
+
+HIGH EXTREMA EVENTS:
+  1987-05-01 (time=1987.33): value=1.9600, score=0.299
+  1987-06-01 (time=1987.41): value=2.0700, score=0.597
+  1988-07-01 (time=1988.50): value=-1.7800, score=0.358
+  1988-08-01 (time=1988.58): value=-1.8100, score=0.358
+  1988-09-01 (time=1988.67): value=-1.8000, score=0.358
+  1988-10-01 (time=1988.75): value=-1.5900, score=0.358
+  1988-11-01 (time=1988.83): value=-1.7000, score=0.358
+  1992-04-01 (time=1992.25): value=1.9700, score=0.597
+  1997-06-01 (time=1997.41): value=2.3400, score=0.478
+  1997-07-01 (time=1997.50): value=2.2600, score=0.478
+  1997-08-01 (time=1997.58): value=2.2600, score=0.478
+  1997-09-01 (time=1997.67): value=2.2000, score=0.478
+  1997-10-01 (time=1997.75): value=2.0600, score=0.478
+  1997-11-01 (time=1997.83): value=2.1400, score=0.478
+  1997-12-01 (time=1997.92): value=2.1100, score=0.478
+  1998-01-01 (time=1998.00): value=2.3000, score=0.478
+  1998-02-01 (time=1998.08): value=2.4500, score=0.657
+  1998-03-01 (time=1998.16): value=2.2700, score=0.478
+  1998-04-01 (time=1998.25): value=2.6100, score=0.776
+  1998-05-01 (time=1998.33): value=2.3300, score=0.478
+  ... and 19 more events
+
+LOW EXTREMA EVENTS:
+  1988-07-01 (time=1988.50): value=-1.7800, score=0.507
+  1988-08-01 (time=1988.58): value=-1.8100, score=0.627
+  1988-09-01 (time=1988.67): value=-1.8000, score=0.507
+  1988-10-01 (time=1988.75): value=-1.5900, score=0.507
+  1988-11-01 (time=1988.83): value=-1.7000, score=0.507
+  1988-12-01 (time=1988.92): value=-1.5500, score=0.328
+  1998-02-01 (time=1998.08): value=2.4500, score=0.358
+  1998-04-01 (time=1998.25): value=2.6100, score=0.358
+  1998-07-01 (time=1998.50): value=-1.5300, score=0.328
+  1998-08-01 (time=1998.58): value=-1.8200, score=0.627
+  1998-09-01 (time=1998.67): value=-1.4000, score=0.328
+  1999-12-01 (time=1999.92): value=-1.4300, score=0.448
+  2008-03-01 (time=2008.16): value=-1.5200, score=0.448
+  2010-07-01 (time=2010.50): value=-2.4300, score=0.627
+  2010-08-01 (time=2010.58): value=-2.3800, score=0.507
+  2010-09-01 (time=2010.67): value=-2.2600, score=0.507
+  2010-10-01 (time=2010.75): value=-2.1600, score=0.507
+  2010-11-01 (time=2010.83): value=-2.0100, score=0.507
+  2010-12-01 (time=2010.92): value=-1.8600, score=0.507
+  2011-01-01 (time=2011.00): value=-1.7700, score=0.507
+  ... and 3 more events
+
+DMI ANALYSIS
+----------------------------------------
+Total observations: 408
+Mean: -0.0733
+Standard deviation: 0.3155
+Skewness: 0.2715
+Kurtosis: 0.8860
+
+Statistical Threshold Method:
+  Lower threshold (5%): -0.5669
+  Upper threshold (95%): 0.4562
+  Lower extrema count: 21
+  Upper extrema count: 21
+
+Block Maxima Analysis:
+  Number of blocks: 13
+  GEV shape parameter (maxima): -0.0683
+  GEV location parameter (maxima): 0.3217
+  GEV scale parameter (maxima): 0.2297
+
+Peak-Over-Threshold Analysis:
+  High threshold: 0.2963
+  Low threshold: -0.4482
+  High exceedances: 41
+  Low exceedances: 41
+
+Z-score Method:
+  Extrema detected: 20
+  Max Z-score: 4.2919
+
+Modified Z-score (MAD) Method:
+  High extrema: 1
+  Low extrema: 0
+
+Isolation Forest:
+  Anomalies detected: 41
+
+Local Outlier Factor:
+  Outliers detected: 41
+
+Composite Score Analysis:
+  High extrema (score > 0.179): 36
+  Low extrema (score > 0.179): 28
+  Max composite score (high): 1.0000
+  Max composite score (low): 0.6269
+
+DMI EXTREMA OCCURRENCE DATES
+----------------------------------------
+
+HIGH EXTREMA EVENTS:
+  1984-10-01 (time=1984.75): value=-0.6540, score=0.358
+  1987-09-01 (time=1987.67): value=0.3930, score=0.299
+  1989-06-01 (time=1989.41): value=-0.7800, score=0.507
+  1992-03-01 (time=1992.16): value=-0.6710, score=0.358
+  1992-06-01 (time=1992.42): value=-0.8610, score=0.507
+  1992-08-01 (time=1992.58): value=-0.7680, score=0.507
+  1992-09-01 (time=1992.67): value=-0.8330, score=0.507
+  1994-05-01 (time=1994.33): value=0.5440, score=0.328
+  1994-07-01 (time=1994.50): value=0.5570, score=0.657
+  1994-08-01 (time=1994.58): value=0.8110, score=0.776
+  1994-09-01 (time=1994.67): value=0.5290, score=0.328
+  1994-10-01 (time=1994.75): value=0.7070, score=0.657
+  1996-07-01 (time=1996.50): value=-0.6430, score=0.358
+  1996-08-01 (time=1996.58): value=-0.6810, score=0.358
+  1996-09-01 (time=1996.67): value=-0.7120, score=0.507
+  1996-10-01 (time=1996.75): value=-1.1080, score=0.507
+  1996-11-01 (time=1996.83): value=-0.7970, score=0.507
+  1997-08-01 (time=1997.58): value=0.6340, score=0.657
+  1997-09-01 (time=1997.67): value=0.7710, score=0.657
+  1997-10-01 (time=1997.75): value=0.8730, score=0.657
+  ... and 16 more events
+
+LOW EXTREMA EVENTS:
+  1984-09-01 (time=1984.67): value=-0.6080, score=0.328
+  1984-10-01 (time=1984.75): value=-0.6540, score=0.507
+  1989-05-01 (time=1989.33): value=-0.5940, score=0.328
+  1989-06-01 (time=1989.41): value=-0.7800, score=0.627
+  1992-03-01 (time=1992.16): value=-0.6710, score=0.507
+  1992-06-01 (time=1992.42): value=-0.8610, score=0.627
+  1992-08-01 (time=1992.58): value=-0.7680, score=0.507
+  1992-09-01 (time=1992.67): value=-0.8330, score=0.507
+  1994-07-01 (time=1994.50): value=0.5570, score=0.358
+  1994-08-01 (time=1994.58): value=0.8110, score=0.358
+  1994-10-01 (time=1994.75): value=0.7070, score=0.358
+  1996-07-01 (time=1996.50): value=-0.6430, score=0.507
+  1996-08-01 (time=1996.58): value=-0.6810, score=0.507
+  1996-09-01 (time=1996.67): value=-0.7120, score=0.507
+  1996-10-01 (time=1996.75): value=-1.1080, score=0.627
+  1996-11-01 (time=1996.83): value=-0.7970, score=0.507
+  1997-08-01 (time=1997.58): value=0.6340, score=0.358
+  1997-09-01 (time=1997.67): value=0.7710, score=0.358
+  1997-10-01 (time=1997.75): value=0.8730, score=0.358
+  1997-11-01 (time=1997.83): value=1.2790, score=0.358
+  ... and 8 more events
+
+
+CROSS-VARIABLE EXTREMA ANALYSIS
+========================================
+Coincident high extrema (all three): 0
+Coincident high extrema (ITF-ENSO): 4
+Coincident high extrema (ITF-DMI): 1
+Coincident high extrema (ENSO-DMI): 9
