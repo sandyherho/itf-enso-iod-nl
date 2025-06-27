@@ -247,6 +247,72 @@ class ExtremaAnalyzer:
         
         return analysis_results
     
+    def save_extrema_events(self, output_path):
+        """Save all extrema events to a detailed text file"""
+        with open(output_path, 'w') as f:
+            f.write("="*80 + "\n")
+            f.write("COMPLETE EXTREMA EVENTS LISTING\n")
+            f.write("Author: Sandy Herho <sandy.herho@email.ucr.edu>\n")
+            f.write("Date: June 2025\n")
+            f.write("="*80 + "\n\n")
+            
+            for var_name in ['ITF', 'ENSO', 'DMI']:
+                f.write(f"\n{var_name} EXTREMA EVENTS\n")
+                f.write("="*60 + "\n")
+                
+                # Get composite scores and thresholds
+                composite_high = self.composite_scores[var_name]['composite_high']
+                composite_low = self.composite_scores[var_name]['composite_low']
+                series = self.composite_scores[var_name]['series']
+                valid_mask = self.composite_scores[var_name]['valid_mask']
+                
+                high_threshold = np.percentile(composite_high, 90)
+                low_threshold = np.percentile(composite_low, 90)
+                
+                # Get indices
+                high_extrema_indices = np.where(composite_high > high_threshold)[0]
+                low_extrema_indices = np.where(composite_low > low_threshold)[0]
+                
+                # Get corresponding dates
+                valid_dates = self.data['Date'][valid_mask].reset_index(drop=True)
+                valid_times = self.data['time'][valid_mask].reset_index(drop=True)
+                
+                # Write high extrema
+                f.write(f"\nHIGH EXTREMA EVENTS (Total: {len(high_extrema_indices)})\n")
+                f.write("-"*60 + "\n")
+                f.write("Date                Time      Value       Score\n")
+                f.write("-"*60 + "\n")
+                
+                for idx in high_extrema_indices:
+                    date_str = valid_dates.iloc[idx]
+                    time_val = valid_times.iloc[idx]
+                    value = series.iloc[idx]
+                    score = composite_high[idx]
+                    f.write(f"{date_str:20s} {time_val:8.2f} {value:10.4f} {score:8.3f}\n")
+                
+                # Write low extrema
+                f.write(f"\nLOW EXTREMA EVENTS (Total: {len(low_extrema_indices)})\n")
+                f.write("-"*60 + "\n")
+                f.write("Date                Time      Value       Score\n")
+                f.write("-"*60 + "\n")
+                
+                for idx in low_extrema_indices:
+                    date_str = valid_dates.iloc[idx]
+                    time_val = valid_times.iloc[idx]
+                    value = series.iloc[idx]
+                    score = composite_low[idx]
+                    f.write(f"{date_str:20s} {time_val:8.2f} {value:10.4f} {score:8.3f}\n")
+                
+                # Add summary statistics
+                f.write(f"\nSUMMARY STATISTICS FOR {var_name}\n")
+                f.write("-"*60 + "\n")
+                f.write(f"High extrema threshold (90th percentile): {high_threshold:.3f}\n")
+                f.write(f"Low extrema threshold (90th percentile): {low_threshold:.3f}\n")
+                f.write(f"Total high extrema events: {len(high_extrema_indices)}\n")
+                f.write(f"Total low extrema events: {len(low_extrema_indices)}\n")
+                f.write(f"Percentage of high extrema: {len(high_extrema_indices)/len(series)*100:.2f}%\n")
+                f.write(f"Percentage of low extrema: {len(low_extrema_indices)/len(series)*100:.2f}%\n")
+    
     def generate_statistics_report(self):
         """Generate comprehensive statistics report"""
         report_lines = []
@@ -352,6 +418,7 @@ class ExtremaAnalyzer:
                     report_lines.append(f"  {date_str} (time={time_val:.2f}): value={value:.4f}, score={score:.3f}")
                 if len(high_extrema_indices) > 20:
                     report_lines.append(f"  ... and {len(high_extrema_indices)-20} more events")
+                    report_lines.append(f"  (See extrema_all_events.txt for complete listing)")
             else:
                 report_lines.append("  No high extrema detected")
             
@@ -365,6 +432,7 @@ class ExtremaAnalyzer:
                     report_lines.append(f"  {date_str} (time={time_val:.2f}): value={value:.4f}, score={score:.3f}")
                 if len(low_extrema_indices) > 20:
                     report_lines.append(f"  ... and {len(low_extrema_indices)-20} more events")
+                    report_lines.append(f"  (See extrema_all_events.txt for complete listing)")
             else:
                 report_lines.append("  No low extrema detected")
             
@@ -621,6 +689,9 @@ class ExtremaAnalyzer:
         with open('../stats/extrema_evaluation_report.txt', 'w') as f:
             f.write(report)
         
+        # Save all extrema events to separate file
+        self.save_extrema_events('../stats/extrema_all_events.txt')
+        
         # Save CSV results
         self.save_results_csv('../processed_data/extrema_evaluation_results.csv')
         
@@ -630,6 +701,7 @@ class ExtremaAnalyzer:
         print("Extrema evaluation completed successfully!")
         print("Files saved:")
         print("  - Report: ../stats/extrema_evaluation_report.txt")
+        print("  - All events: ../stats/extrema_all_events.txt")
         print("  - Data: ../processed_data/extrema_evaluation_results.csv")
         print("  - Figures: ../figs/extrema_evaluation_comprehensive.[eps/pdf/png]")
 
